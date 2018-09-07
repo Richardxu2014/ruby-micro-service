@@ -1,0 +1,4 @@
+Gemfile.lock
+.idea
+.DS_Store
+logs/*.log

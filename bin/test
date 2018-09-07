@@ -1,0 +1,13 @@
+#!/usr/bin/env ruby
+require_relative '../config/setup'
+require 'sneakers/runner'
+require 'test' # 引入要执行的worker
+
+Sneakers.configure(
+  amqp: Settings.amqp_url,
+  daemonize: false,
+  log: STDOUT
+)
+
+Sneakers.logger.level = Logger::INFO
+Sneakers::Runner.new([Test]).run   # 启动要执行的worker

@@ -1,0 +1,45 @@
+development:
+  amqp_url: "amqp://admin:admin123@localhost:5672"
+
+  mysql:
+    host: 'localhost'
+    port: 3306
+    user: 'root'
+    password: '123'
+    database: 'development'
+  
+  redis:
+    host: '127.0.0.1'
+    port: 6379
+    auth_pass: ''  
+
+test:
+  amqp_url: "amqp://admin:admin123@testhost:5672"
+
+  mysql:
+    host: 'testhost'
+    port: 3306
+    user: 'root'
+    password: '123'
+    database: 'test'
+  
+  redis:
+    host: '127.0.0.1'
+    port: 6379
+    auth_pass: ''  
+
+
+prodution:
+  amqp_url: "amqp://admin:admin123@produtionhost:5672"
+
+  mysql:
+    host: 'produtionhost'
+    port: 3306
+    user: 'root'
+    password: '123'
+    database: 'prodution'
+  
+  redis:
+    host: '127.0.0.1'
+    port: 6379
+    auth_pass: ''  
